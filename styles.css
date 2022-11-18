@@ -1,0 +1,522 @@
+/*customizing margins for entire site*/
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*register page*/
+.register form
+{
+  min-height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.register .box
+{
+  width: 100%;
+  border-radius: 5px;
+  border: solid;
+  padding: 15px 16px;
+  font-size: large;
+  margin: 10px 0;
+}
+
+/* adding background image*/
+body{
+    background-image: url("img/background5.jpg");
+    background-position: center;
+    background-repeat: none;
+}
+
+.homecontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 192, 203, 0.425);
+}
+
+.homeimage img{
+  width: 100%;
+}
+.homeimage{
+  flex-basis: 40%;
+}
+
+.hometext{
+  font-size: 20px;
+  padding-left: 20px;
+}
+/*---------------shopping page-------------------*/
+.products .shop-container
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap: 1.5rem;
+}
+
+.products .shop-container .box
+{
+  text-align: center;
+  padding: 2rem;
+  box-shadow: purple;
+  background-color: rgba(255, 192, 203, 0.500);
+  border: double;
+  border-radius: .5rem;
+}
+
+.products .shop-container .box img
+{
+  height: 400px;
+  width: 400px;
+}
+
+.products .shop-container .box h3
+{
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.products .shop-container .box h2
+{
+  margin: 1rem 0;
+  font-size: 2.0rem;
+}
+
+.products .shop-container .box .prod_desc
+{
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+
+
+.btn_add_to_cart
+{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: solid;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+/*customizing navbar*/
+.navbar{
+    display: flex;
+    align-items: centre;
+    padding: 100px;
+}
+
+/*-----------------customizing navbar------------------------*/
+nav{
+    flex: 1;
+    text-align: right;
+    background-image: linear-gradient(white, pink);
+}
+
+.logo{
+  text-align: left;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: larger;
+}
+header.image{
+    text-align: center;
+}
+
+/*----------------creating custom colours for link actions------------------*/
+a:link {
+    color: rgb(174, 0, 255);
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+input:hover{
+    color:hotpink;
+    background-color: pink;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* --------------------Set a specific color for each brand-------------- */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* footer column customization*/
+.footer{
+    font-size: 14px;
+    padding: 0px 0 0px;
+}
+
+.footer-col-1, .footer-col-2{
+    min-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+  padding: 16px;
+  background-image: linear-gradient(purple, pink)
+}
+
+.about{
+  background-image: white, grey;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 0 20px;
+}
+
+.about-col-1{
+  min-width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-col-1 h1{
+  background-color: pink;
+  border-style:outset;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.about-col-1 h2{
+  background-color: pink;
+  border-style:outset;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.container1{
+  background-color: rgba(255, 192, 203, 0.425);
+  padding: 16px;
+}
+
+.container2{
+  background-color: rgba(255, 192, 203, 0.753);
+  padding: 16px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/*------------------- Set a style for the register/login buttons --------------------*/
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: solid;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+
+  /*--------------------------cart page-----------------------*/
+.shopping-cart-page table
+{
+  text-align: center;
+  width: 100%;
+
+}
+
+.shopping-cart-page table thead th
+{
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  background-image: linear-gradient(purple, rgb(253, 192, 255));
+}
+
+.shopping-cart-page table tr td
+{
+  border-bottom: solid;
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: black;
+}
+
+.shopping-cart-page table .table-bottom
+{
+  background-image: linear-gradient(purple, rgb(253, 192, 255));
+
+}
+
+.shopping-cart-page .btn-checkout
+{
+  text-align: center;
+  margin-top: 1rem;
+
+}
+
+.shopping-cart-page .btn-checkout a
+{
+  display: inline-block;
+  width: auto;
+}
+
+.shopping-cart-page .btn-checkout a.disabled
+{
+  pointer-events: none;
+  opacity: 0.5;
+  user-select: none;
+}
+
+@media (max-width: 1200px)
+{
+  .shopping-cart-page
+  {
+    overflow-x: scroll;
+  }
+
+  .shopping-cart-page table
+  {
+    width: 12rem;
+  }
+
+  .shopping-cart-page .heading
+  {
+    text-align: left;
+  }
+
+  .shopping-cart-page .btn-checkout
+  {
+    text-align: left;
+  }
+}
+
+/*----------------checkout form----------------*/
+.checkout-form form
+{
+  padding: 2rem;
+  border-radius: .5rem;
+  background-color: rgba(255, 192, 203, 0.500);
+}
+
+.checkout-form form .flex
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.checkout-form form .flex .inputBox
+{
+  flex: 1 1 40rem;
+}
+
+.checkout-form form .flex .inputBox span
+{
+  font-size: 2rem;
+  color: black;
+}
+
+.checkout-form form .flex .inputBox input,
+.checkout-form form .flex .inputBox select
+{
+  width: 100%;
+  background-color: rgba(255, 192, 203, 0.855);
+  font-size: 1.7rem;
+  color: grey;
+  border-radius: .5rem;
+  margin: 1rem 0;
+  padding: 1.2rem 1.4rem;
+  text-transform: none;
+  border: solid;
+}
+
+.display-order
+{
+  max-width: 50rem;
+  background-color: rgba(128, 0, 128, 0.500);
+  border-radius: .5rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  box-shadow: grey;
+  border: solid;
+}
+
+.display-order span
+{
+  display: inline-block;
+  border-radius: .5rem;
+  background-color: rgba(128, 0, 128, 0.300);
+  padding: .5rem 1.5rem;
+  font-size: 2rem;
+  color: black;
+  margin: .5rem;
+}
+
+.display-order span .grand-total
+{
+   width: 100%;
+   background-color: magenta;
+   color: white;
+   padding: 1rem;
+   margin-top: 1rem;
+}
+
+/*-----------order message container-----------*/
+.order-message-container
+{
+  position: fixed;
+  top: 0; left: 0;
+  min-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 1100;
+  background-color: rgba(128, 0, 128, 0.500);
+  width: 100%;
+}
+
+.order-message-container::-webkit-scrollbar
+{
+  width: 1rem;
+}
+
+.order-message-container::-webkit-scrollbar-track
+{
+  background-color: rgb(168, 50, 228);
+}
+
+.order-message-container::-webkit-scrollbar-thumb
+{
+  background-color: darkorchid;
+}
+
+
+.order-message-container .message-container
+{
+  width: 50rem;
+  background-image: linear-gradient(purple, pink);
+  border-radius: .5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.order-message-container .message-container h3
+{
+  font-size: 2.5rem;;
+  color: black;
+}
+
+.order-message-container .message-container .order-detail
+{
+  background-color: darkorchid;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.order-message-container .message-container .order-detail span
+{
+  background-color: pink;
+  border-radius: .5rem;
+  color: black;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin: 1rem; 
+}
+
+.order-message-container .message-container .order-detail span .grand-total
+{
+  display: block;
+  background:rgba(128, 0, 128, 0.300);
+  color: white;
+}
+
+.order-message-container .message-container .customer-details
+{
+  margin: 1.5rem 0;
+}
+
+.order-message-container .message-container .customer-details p
+{
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: black;
+}
+
+.order-message-container .message-container .customer-details p span
+{
+  color: purple;
+  padding: 0 .5rem;
+  text-transform: none;
+}
